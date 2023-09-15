@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: desafio11
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: desafio11
+  template:
+    metadata:
+      labels:
+        app: desafio11
+    spec:
+      containers:
+        - name: desafio11-container
+          image: franrodeles/web-docker-apache:v1
+          ports:
+            - containerPort: 80
+            

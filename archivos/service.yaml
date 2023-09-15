@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  type: NodePort
+
+  selector:
+    app: desafio11
+  ports:
+    - port: 80      # Cambia el puerto NodePort aquí
+
+
+
