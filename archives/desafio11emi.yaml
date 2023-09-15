@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: my-deployment
+spec:
+ replicas: 3
+ selector:apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: desafio11emi
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: desafio11emi
+      apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: my-deployment
+spec:
+ replicas: 3
+ selector:apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: desafio11emi
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: desafio11emi
